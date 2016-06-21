@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="boost::basic_string_view&lt;*,*&gt;">
+    <DisplayString>{ptr_,[len_]s8}</DisplayString>
+    <Expand>
+      <Item Name="[size]" ExcludeView="simple">len_</Item>
+      <ArrayItems>
+        <Size>len_</Size>
+        <ValuePointer>ptr_</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+</AutoVisualizer>
+
